@@ -31,6 +31,11 @@
         line-height: 22px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
+        transition: .3s ease;
+        cursor: pointer;
+        &:hover {
+            color: #c87b5e;
+        }
     }
 }
 
@@ -50,4 +55,9 @@
     padding: 7px 12px;
     background: #c87b5e;
     border-radius: 100%;
+    &:hover {
+        color: #fff;
+        background: #ad674f;
+        border: 1px solid #ad674f;
+    }
 }
