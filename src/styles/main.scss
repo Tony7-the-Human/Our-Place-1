@@ -185,11 +185,12 @@ body {
         width: 30px;
         height: 30px;
         border-radius: 50%;
+        cursor: pointer;
     }
 }
 
 .active {
-    border: 3px solid #E09D81;
+    border: 3px solid #f76b30;
 }
 
 .orange {
@@ -376,5 +377,117 @@ body {
     text-align: center;
     max-width: 441px;
     color: #4F463F;
-    padding-bottom: 75px;
+    padding-bottom: 90px;
+}
+
+.goods {
+    padding-bottom: 80px;
+    // .goods__body
+    &__body {}
+    // .goods__row
+    &__row {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    // .goods__column
+    &__column {
+        flex: 0 1 22%;
+        display: flex;
+        // .goods__column_1
+    }
+    // .goods__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    // .goods__image
+    &__image {
+        align-self: center;
+    }
+    // .goods__title
+    &__title {
+        padding-top: 22px;
+        padding-bottom: 4px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #35312E;
+    }
+    // .goods__label
+    &__label {
+        padding-bottom: 6px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #6E635A;
+    }
+    &__label p {
+        margin: 0;
+    }
+    // .goods__text
+    &__text {
+        padding-bottom: 17px;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #6E635A;
+        flex: 1 1 auto;
+        max-width: 184px;
+        margin: 0 auto;
+    }
+    &__text p {
+        margin: 0;
+    }
+    // .goods__colors
+    &__colors {
+        display: block;
+    }
+}
+
+.goods__color {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.good__color {
+    &-item {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.ibg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ibg img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.good-color__item-circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
 }
