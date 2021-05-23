@@ -383,8 +383,6 @@ body {
 .goods {
     padding-bottom: 80px;
     // .goods__body
-    &__body {}
-    // .goods__row
     &__row {
         display: flex;
         justify-content: space-evenly;
@@ -490,4 +488,93 @@ body {
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.section-advantages {}
+
+.advantages {
+    // .advantages__row
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+    }
+    // .advantages__column
+    &__column {
+        flex: 0 1 33.333%;
+    }
+    // .advantages__column-i
+    &__column-i {
+        background-image: url(../img/image-5.png);
+        width: 100%;
+        height: 480px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__column-j {
+        background-image: url(../img/image-6.png);
+        width: 100%;
+        height: 480px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    // .advantages__image
+    &__image {}
+}
+
+// .advantages__body
+.advantages__body {
+    padding-top: 109px;
+    margin: 0 auto;
+    background: #F5F1E9;
+    padding-bottom: 129px;
+}
+
+// .advantages__tag
+.advantages__tag {
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #35312E;
+}
+
+// .advantages__title
+.advantages__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #35312E;
+    padding: 32px 20px 80px 20px;
+}
+
+// .advantages__link
+.advantages__link {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4F463F;
+    background-color: #fff;
+    padding: 18px 56px;
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover {
+        color: #fff;
+        background-color: #ad674f;
+    }
+}
+
+.advantages__btn {
+    display: block;
+    text-align: center;
 }
