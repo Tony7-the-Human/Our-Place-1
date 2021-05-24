@@ -1,0 +1,139 @@
+.footer {
+    background-color: #6C674D;
+}
+
+.wrapper {
+    max-width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.footer-items__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.footer-item {
+    flex: 0 1 50%;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 58px;
+    letter-spacing: 0.7px;
+    color: #F5F1E9;
+    padding-top: 78px;
+}
+
+.footer-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FCFAF6;
+    padding-bottom: 48px;
+}
+
+.footer-input {}
+
+.footer-input__text {
+    padding: 17px 130px 17px 20px;
+}
+
+.footer-input__btn {
+    background-color: #fff;
+    text-align: center;
+    padding: 21px 24px 19px 24px;
+    display: inline-block;
+    margin-left: -5px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #4F463F;
+    cursor: pointer;
+}
+
+.footer-item__list {
+    flex: 0 1 23.333%;
+}
+
+.shop {}
+
+.footer-item__item {
+    list-style-type: none;
+}
+
+.footer-item__link-bold {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F5F1E9;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    /* identical to box height, or 191% */
+    color: rgba(245, 241, 233, 0.6);
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover {
+        color: rgba(245, 241, 233, 1);
+    }
+}
+
+.footer-item__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 70px;
+}
+
+.footer-copyright {
+    background-color: #807C62;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(252, 250, 246, 0.5);
+}
+
+.footer-copyright__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.footer-copyright__item {
+    padding-left: 30px;
+}
+
+.footer-copyright__link {
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(252, 250, 246, 0.5);
+    text-decoration: none;
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover {
+        color: rgba(252, 250, 246, 1);
+    }
+}
