@@ -2,6 +2,9 @@ import "./import/modules";
 
 
 
+
+
+
 let colorItems = document.querySelectorAll('.design-color__item-circle');
 let active = colorItems[0]; // moo[0], чтобы при первом клике не было ошибки.
 
@@ -49,3 +52,20 @@ function ibg() {
 }
 
 ibg();
+
+const burgerBtn = document.querySelector('.burger-menu')
+const navMenu = document.querySelector('.menu-nav')
+const navItems = document.querySelectorAll('.menu-nav__item')
+
+
+burgerBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active-nav')
+})
+
+navItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        if (navMenu.classList.contains('active-nav')) {
+            navMenu.classList.remove('active-nav')
+        }
+    })
+})

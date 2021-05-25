@@ -144,6 +144,10 @@ input {
     text-align: center;
     padding-top: 45px;
     padding-bottom: 42px;
+    @media (max-width: 576px) {
+        font-size: 2rem;
+        ;
+    }
 }
 
 .title {
@@ -179,6 +183,9 @@ input {
 
 .welcome-item {
     flex: 0 1 50%;
+    @media (max-width: 990px) {
+        flex: 0 1 100%;
+    }
 }
 
 .welcome-title {
@@ -189,6 +196,14 @@ input {
     text-align: center;
     letter-spacing: 1.25px;
     color: #35312E;
+    @media (max-width: 990px) {
+        width: 100%;
+        padding-top: 50px;
+    }
+    @media (max-width: 375px) {
+        font-size: 3.4rem;
+        line-height: 42px;
+    }
 }
 
 .welcome-text {
@@ -198,11 +213,19 @@ input {
     font-size: 1.6rem;
     line-height: 26px;
     color: #4F463F;
+    @media (max-width: 990px) {
+        max-width: none;
+        padding: 60px 0px 60px 0px;
+        text-align: center;
+    }
 }
 
 .section-design {
     background-color: #FBF6EA;
     padding-bottom: 140px;
+    @media (max-width: 576px) {
+        padding-bottom: 50px;
+    }
 }
 
 .design-title {
@@ -212,6 +235,9 @@ input {
     padding-top: 70px;
     padding-bottom: 53px;
     text-align: center;
+    @media (max-width: 576px) {
+        padding-top: 50px;
+    }
 }
 
 .design-colors {
@@ -325,31 +351,31 @@ input {
     // .design-text__visual-01
     &__visual-01 {
         position: absolute;
-        top: 70px;
+        top: 88px;
         left: 338px;
         max-width: 135px;
         @media (max-width: 1440px) {
             left: 214px;
+            top: 91px;
         }
         @media (max-width: 1200px) {
             left: 183px;
+            top: 78px;
         }
         @media (max-width: 990px) {
             left: 92px;
         }
         @media (max-width: 767px) {
-            left: 44px;
-            top: 46px;
+            left: 34px;
+            top: 56px;
         }
         @media (max-width: 576px) {
             left: 55px;
             top: 11px;
             max-width: 88px;
         }
-        @media (max-width: 320px) {
-            left: -3px;
-            top: -12px;
-            max-width: 88px;
+        @media (max-width: 570px) {
+            display: none;
         }
         &::after {
             content: '';
@@ -363,6 +389,9 @@ input {
             @media (max-width: 576px) {
                 top: 49px;
                 left: 101px;
+            }
+            @media (max-width: 570px) {
+                display: none;
             }
         }
     }
@@ -389,10 +418,8 @@ input {
         @media (max-width: 576px) {
             left: 55px;
         }
-        @media (max-width: 320px) {
-            left: 2px;
-            bottom: 56px;
-            max-width: 90px;
+        @media (max-width: 570px) {
+            display: none;
         }
         &::after {
             content: '';
@@ -408,9 +435,8 @@ input {
                 left: 124px;
                 max-width: 107px;
             }
-            @media (max-width: 320px) {
-                bottom: -5px;
-                left: 90px;
+            @media (max-width: 570px) {
+                display: none;
             }
         }
     }
@@ -439,10 +465,8 @@ input {
             bottom: -32px;
             max-width: 114px;
         }
-        @media (max-width: 320px) {
-            left: 0px;
-            bottom: -70px;
-            max-width: 114px;
+        @media (max-width: 570px) {
+            display: none;
         }
         &::after {
             content: '';
@@ -460,23 +484,23 @@ input {
                 left: 153px;
                 bottom: 36px;
             }
-            @media (max-width: 320px) {
-                left: 107px;
-                bottom: 68px;
+            @media (max-width: 570px) {
+                display: none;
             }
         }
     }
     // .design-text__visual-04
     &__visual-04 {
         position: absolute;
-        top: 23px;
+        top: 41px;
         right: 352px;
         max-width: 158px;
         @media (max-width: 1440px) {
             right: 214px;
+            top: 35px;
         }
         @media (max-width: 1200px) {
-            top: 31px;
+            top: 44px;
             right: 173px;
         }
         @media (max-width: 990px) {
@@ -484,18 +508,17 @@ input {
         }
         @media (max-width: 767px) {
             right: 7px;
-            top: 3px;
+            top: 15px;
             max-width: 120px;
         }
         @media (max-width: 576px) {
             right: 75px;
-            top: -5px;
+            top: 7px;
+            ;
             max-width: 97px;
         }
-        @media (max-width: 320px) {
-            right: 0px;
-            top: -22px;
-            max-width: 97px;
+        @media (max-width: 570px) {
+            display: none;
         }
         &::after {
             content: '';
@@ -518,9 +541,8 @@ input {
                 top: 59px;
                 right: 43px;
             }
-            @media (max-width: 320px) {
-                top: 59px;
-                right: 43px
+            @media (max-width: 570px) {
+                display: none;
             }
         }
     }
@@ -550,10 +572,8 @@ input {
             bottom: 130px;
             max-width: 101px;
         }
-        @media (max-width: 320px) {
-            right: -11px;
-            bottom: 88px;
-            max-width: 96px;
+        @media (max-width: 570px) {
+            display: none;
         }
         &::after {
             content: '';
@@ -572,9 +592,8 @@ input {
                 right: 145px;
                 bottom: 14px;
             }
-            @media (max-width: 320px) {
-                right: 93px;
-                bottom: 10px;
+            @media (max-width: 570px) {
+                display: none;
             }
         }
     }
@@ -603,10 +622,8 @@ input {
             bottom: 35px;
             max-width: 160px;
         }
-        @media (max-width: 320px) {
-            right: -14px;
-            bottom: 8px;
-            max-width: 92px;
+        @media (max-width: 570px) {
+            display: none;
         }
         &::after {
             content: '';
@@ -621,10 +638,8 @@ input {
                 bottom: 36px;
                 right: 48px;
             }
-            @media (max-width: 320px) {
-                right: 44px;
-                bottom: 44px;
-                max-width: 92px;
+            @media (max-width: 570px) {
+                display: none;
             }
         }
     }
@@ -644,6 +659,10 @@ input {
     letter-spacing: 1.2px;
     max-width: 447px;
     padding-bottom: 18px;
+    @media (max-width: 576px) {
+        font-size: 2.3rem;
+        line-height: 41px;
+    }
 }
 
 .goods-description {
@@ -655,6 +674,9 @@ input {
     max-width: 441px;
     color: #4F463F;
     padding-bottom: 90px;
+    @media (max-width: 576px) {
+        padding-bottom: 50px;
+    }
 }
 
 .goods {
@@ -664,11 +686,21 @@ input {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     // .goods__column
     &__column {
         flex: 0 1 22%;
         display: flex;
+        @media (max-width: 1200px) {
+            margin: 15px 0;
+        }
+        @media (max-width: 576px) {
+            flex: 0 1 100%;
+        }
         // .goods__column_1
     }
     // .goods__item
@@ -724,6 +756,9 @@ input {
     // .goods__colors
     &__colors {
         display: block;
+        @media (max-width: 576px) {
+            padding-bottom: 50px;
+        }
     }
 }
 
@@ -768,8 +803,6 @@ input {
     cursor: pointer;
 }
 
-.section-advantages {}
-
 .advantages {
     // .advantages__row
     &__row {
@@ -780,6 +813,9 @@ input {
     // .advantages__column
     &__column {
         flex: 0 1 33.333%;
+        @media (max-width: 990px) {
+            flex: 0 1 100%;
+        }
     }
     // .advantages__column-i
     &__column-i {
@@ -798,8 +834,6 @@ input {
         background-repeat: no-repeat;
         background-position: center;
     }
-    // .advantages__image
-    &__image {}
 }
 
 // .advantages__body
@@ -808,6 +842,10 @@ input {
     margin: 0 auto;
     background: #F5F1E9;
     min-height: 480px;
+    @media (max-width: 576px) {
+        padding-top: 50px;
+        min-height: 400px;
+    }
 }
 
 // .advantages__tag
@@ -831,6 +869,9 @@ input {
     letter-spacing: 1px;
     color: #35312E;
     padding: 32px 20px 80px 20px;
+    @media (max-width: 576px) {
+        padding: 32px 20px 50px 20px;
+    }
 }
 
 // .advantages__link
